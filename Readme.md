@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталья Захарова](https://up.htmlacademy.ru/adaptive/15/user/468683).
-* Наставник: [Илья Туров].
+* Наставник: [Илья Туров](https://up.htmlacademy.ru/adaptive/15/user/240222).
 
 ---
 
