@@ -4,129 +4,148 @@
     <meta charset="UTF-8">
     <title>Фотографии</title>
   </head>
-  <body>
+  <body class="page">
 
-    <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item site-list__item--active">
-              <a>Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">Открыть меню</button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main class="page-photo">
-
-      <h1 class="photo__heading">Фотографии пользователей</h1>
+    <main class="main">
+      <div class="main__div">
+        <h1 class="main__heading">Фотографии пользователей</h1>
+      </div>
       <section class="photo">
         <div class="photo__wrapper">
           <h2 class="visually-hidden">Лента фотографий</h2>
           <p class="photo__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <ul class="photo__list">
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя Анны">
+          <figure class="photo__item">
+            <img class="photo__users-image photo__users-image--panorama" src="img/panorama-mobile.jpg" width="320" height="137" alt="Фотография пользователя Анны">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Анна</cite>
               <time class="photo__date">(5 минут назад)</time>
               <p class="photo__users-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <p class="photo__likes">Нравится: 215</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-1-mobile.jpg" width="320" height="137" alt="Фотография пользователя Левон">
+              <span class="photo__likes">Нравится: <output name="likes">215</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-1-mobile.jpg" width="320" height="137" alt="Фотография пользователя Левон">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Левон</cite>
               <time class="photo__date">(5 часов назад)</time>
               <p class="photo__users-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="photo__likes">Нравится: 356</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-2-mobile.jpg" width="320" height="137" alt="Фотография пользователя Антон">
+              <span class="photo__likes">Нравится: <output name="likes">356</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-2-mobile.jpg" width="320" height="137" alt="Фотография пользователя Антон">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Антон</cite>
               <time class="photo__date">(12 часов назад)</time>
               <p class="photo__users-text">Соседи будут рады!</p>
-              <p class="photo__likes">Нравится: 666</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-3-mobile.jpg" width="320" height="137" alt="Фотография пользователя Бориса">
+              <span class="photo__likes">Нравится: <output name="likes">666</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-3-mobile.jpg" width="320" height="137" alt="Фотография пользователя Бориса">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Борис</cite>
               <time class="photo__date">(20 часов назад)</time>
               <p class="photo__users-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="photo__likes">Нравится: 215</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-4-mobile.jpg" width="320" height="137" alt="Фотография пользователя Сергея">
+              <span class="photo__likes">Нравится: <output name="likes">215</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-4-mobile.jpg" width="320" height="137" alt="Фотография пользователя Сергея">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Сергей</cite>
               <time class="photo__date">(25 часов назад)</time>
               <p class="photo__users-text">Самая кубанская в мире!</p>
-              <p class="photo__likes">Нравится: 4</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-5-mobile.jpg" width="320" height="137" alt="Фотография пользователя Максим">
+              <span class="photo__likes">Нравится: <output name="likes">4</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-5-mobile.jpg" width="320" height="137" alt="Фотография пользователя Максим">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Максим</cite>
               <time class="photo__date">(40 часов назад)</time>
               <p class="photo__users-text">Где снег-то?</p>
-              <p class="photo__likes">Нравится: 150</p>
-            </li>
-            <li class="photo__item">
-              <img class="photo__users-image" src="img/photo-6-mobile.jpg" width="320" height="137" alt="Фотография пользователя Надежды">
+              <span class="photo__likes">Нравится: <output name="likes">150</output></span>
+            </figcaption>
+          </figure>
+          <figure class="photo__item">
+            <img class="photo__users-image" src="img/photo-6-mobile.jpg" width="320" height="137" alt="Фотография пользователя Надежды">
+            <figcaption class="photo__caption">
               <cite class="photo__users-name">Надежда</cite>
               <time class="photo__date">(45 часов назад)</time>
               <p class="photo__users-text">Всем GM и взаимные лайки!</p>
-              <p class="photo__likes">Нравится: 2560</p>
-            </li>
-          </ul>
+              <span class="photo__likes">Нравится: <output name="likes">2560</output></span>
+            </figcaption>
+          </figure>
           <p class="photo__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </section>
       <section class="photo-add">
         <h2 class="visually-hidden">Добавление фотографии</h2>
-        <div class="photo-add__wrapper">
-          <img class="photo-add__image" src="img/photo-7-mobile.jpg" alt="Добавляемая фотография">
-          <ul class="photo-add__edit">
-            <li><img src="img/crop.svg" alt="Вырезать"></li>
-            <li><img src="img/fill.svg" alt="Заполнить"></li>
-            <li><img src="img/contrast.svg" alt="Контраст"></li>
+        <img class="photo-add__image" src="img/photo-7-mobile.jpg" alt="Добавляемая фотография">
+        <div class="photo-add__filters filters">
+          <ul class="filters__list">
+            <li class="filters__item">
+              <img class="filters__image" src="img/crop.svg" width="44" height="44" alt="Вырезать">
+            </li>
+            <li class="filters__item">
+              <img class="filters__image" src="img/fill.svg" width="48" height="43" alt="Заполнить">
+            </li>
+            <li class="filters__item">
+              <img class="filters__image" src="img/contrast.svg" width="32" height="32" alt="Контраст">
+            </li>
           </ul>
-          <button class="photo-add__share button" type="button">Запостить</button>
-          <button class="photo-add__decline button" type="button">Отмена</button>
+          <input class="filters__range" type="range" name="range">
+          <label class="visually-hidden"></label>
+          <button class="button button--regular button--pink" type="button">Запостить</button>
+          <button class="button button--regular button--disabled" type="button">Отмена</button>
         </div>
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="footer__wrapper">
-        <img class="footer__logo" src="img/logotype-blue-tablet.svg" width="147" height="40" alt="Пинк">
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <span class="button copyright__link"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy"></span>
+    <footer class="footer">
+      <img class="footer__logo" src="img/logotype-blue-tablet.svg" width="147" height="40" alt="Пинк">
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Твиттере</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фэйсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в Ютюбе</a>
+          </li>
+        </ul>
       </div>
+      <div class="footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <b class="copyright__text">Разработано</b>
+          <img class="copyright__image" src="img/htmlacademy.svg" width="27" height="34" alt="HTMLacademy">
+        </a>
       </div>
     </footer>
 
