@@ -2,11 +2,195 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Приложение: Пинк</title>
   </head>
-  <body>
+  <body class="page">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+    <header class="header">
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="nav">
+        <button class="nav__toggle" type="button">Открыть меню</button>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <section class="download">
+        <h2 class="visually-hidden">Скачать Пинк</h2>
+        <a href="#" class="button button--regular download__button">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a href="#" class="download__link"><img class="download__image download__image--ios" src="img/apple-logo.svg" width="47" height="56" alt="Логотип apple"></a>
+          </li>
+          <li class="download__item">
+            <a href="#" class="download__link"><img class="download__image download__image--android" src="img/android-logo.svg" width="43" height="47" alt="Логотип android"></a>
+          </li>
+          <li class="download__item">
+            <a href="#" class="download__link"><img class="download__image download__image--microsoft" src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип microsoft"></a>
+          </li>
+        </ul>
+        <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Особенности</h2>
+        <p class="features__slogan">Устали от серости мегаполиса?</p>
+        <p class="features__slogan">Нам есть, что предложить!</p>
+        <ul class="features__list">
+          <li class="feature__item">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментаруйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="reviews">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <cite class="reviews__name">Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познаомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+          <li class="reviews__item">
+            <cite class=reviews__name>Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познаомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+          <li class="reviews__item">
+            <cite class=reviews__name>Николай Петров</cite>
+            <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познаомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+          </li>
+        </ul>
+        <div class="pagination reviews__pagination">
+            <button class="button pagination__button" type="button">1</button>
+            <button class="button pagination__button" type="button">2</button>
+            <button class="button pagination__button" type="button">3</button>
+        </div>
+      </section>
+
+      <section class="fare">
+        <h2 class="visually-hidden">Наши тарифы</h2>
+        <ul class="fare__list">
+          <li class="fare__item">
+            <table class="fare__conditions">
+              <tr>
+                <td class="fare__name">База</td>
+                <td class="fare__price">1,99 USD</td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Розовый фильтр</td>
+                <td class="fare__conditions-check"><img class="fare__conditions--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Смайлики</td>
+                <td class="fare__conditions-check"><img class="conditions-check--no-checked"
+                  src="img/no.svg" width="27" height="26" alt="Не включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Комментарии</td>
+                <td class="fare__conditions-check"><img class="conditions-check--no-checked"
+                  src="img/no.svg" width="27" height="26" alt="Не включено"></td>
+              </tr>
+            </table>
+          </li>
+          <li class="fare__item">
+            <table class="fare__conditions">
+              <tr>
+                <td class="fare__name">Стандарт</td>
+                <td class="fare__price">3,99 USD</td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Розовый фильтр</td>
+                <td class="fare__conditions-check"><img class="fare__conditions--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Смайлики</td>
+                <td class="fare__conditions-check"><img class="fare__conditions-check--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Комментарии</td>
+                <td class="fare__conditions-check"><img class="conditions-check--no-checked"
+                  src="img/no.svg" width="27" height="26" alt="Не включено"></td>
+              </tr>
+            </table>
+          </li>
+          <li class="fare__item">
+            <table class="fare__conditions">
+              <tr>
+                <td class="fare__name">Анлим</td>
+                <td class="fare__price">9,99 USD</td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Розовый фильтр</td>
+                <td class="fare__conditions-check"><img class="fare__conditions--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Смайлики</td>
+                <td class="fare__conditions-check"><img class="fare__conditions-check--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+              <tr>
+                <td class="fare__conditions-item">Комментарии</td>
+                <td class="fare__conditions-check"><img class="fare__conditions-check--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+        <div class="pagination fare__pagination">
+          <button class="button pagination__button" type="button">1</button>
+          <button class="button pagination__button" type="button">2</button>
+          <button class="button pagination__button" type="button">3</button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="contacts__text">Остались вопросы? Свяжитесь с нами!</b>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <p class="contacts__type">Звоните:<br>
+              <a class="contacts__link" href="tel:+78125556666">+7(812)555-66-66</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__type">Пишите:<br>
+              <a class="conacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+          </li>
+          <li class="contacts__item">
+            <p class="contacts__type">Приезжайте в гости:<br>
+              <a class="conacts__link" href="https://goo.gl/maps/V8ZPQxVphGx">ул. Большая Конюшенная, 19/8</a>
+            </p>
+          </li>
+        </ul>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538243328020" width="320" height="645" allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
 
   </body>
 </html>
