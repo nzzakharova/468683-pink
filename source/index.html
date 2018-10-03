@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
 
     <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">Открыть меню</button>
-        <ul class="nav__list">
-          <li class="nav__item nav__item--active">
-            <a class="nav__link">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__wrapper">
+        <a class="header__logo">
+          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button">Открыть меню</button>
+          <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+              <a class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
@@ -36,17 +39,16 @@
         <a href="#" class="button button--regular download__button">Скачать приложение</a>
         <ul class="download__list">
           <li class="download__item">
-            <a href="#" class="download__link"><img class="download__image download__image--ios" src="img/apple-logo.svg" width="47" height="56" alt="Логотип apple"></a>
+            <a href="#" class="download__link"><img class="download__image download__image--ios" src="img/logo-apple.svg" width="47" height="56" alt="Логотип apple"></a>
           </li>
           <li class="download__item">
-            <a href="#" class="download__link"><img class="download__image download__image--android" src="img/android-logo.svg" width="43" height="47" alt="Логотип android"></a>
+            <a href="#" class="download__link"><img class="download__image download__image--android" src="img/logo-android.svg" width="43" height="47" alt="Логотип android"></a>
           </li>
           <li class="download__item">
-            <a href="#" class="download__link"><img class="download__image download__image--microsoft" src="img/microsoft-logo.svg" width="44" height="41" alt="Логотип microsoft"></a>
+            <a href="#" class="download__link"><img class="download__image download__image--microsoft" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип microsoft"></a>
           </li>
         </ul>
         <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-
       </section>
 
       <section class="features">
@@ -97,20 +99,20 @@
         <ul class="fare__list">
           <li class="fare__item">
             <table class="fare__conditions">
-              <tr>
+              <tr class="fare__row">
                 <td class="fare__name">База</td>
                 <td class="fare__price">1,99 USD</td>
               </tr>
-              <tr>
+              <tr class="fare__row">
                 <td class="fare__conditions-item">Розовый фильтр</td>
                 <td class="fare__conditions-check"><img class="fare__conditions--checked" src="img/yes.svg" width="31" height="21" alt="Включено"></td>
               </tr>
-              <tr>
+              <tr class="fare__row">
                 <td class="fare__conditions-item">Смайлики</td>
                 <td class="fare__conditions-check"><img class="conditions-check--no-checked"
                   src="img/no.svg" width="27" height="26" alt="Не включено"></td>
               </tr>
-              <tr>
+              <tr class="fare__row">
                 <td class="fare__conditions-item">Комментарии</td>
                 <td class="fare__conditions-check"><img class="conditions-check--no-checked"
                   src="img/no.svg" width="27" height="26" alt="Не включено"></td>
@@ -177,12 +179,12 @@
           </li>
           <li class="contacts__item">
             <p class="contacts__type">Пишите:<br>
-              <a class="conacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
           </li>
           <li class="contacts__item">
             <p class="contacts__type">Приезжайте в гости:<br>
-              <a class="conacts__link" href="https://goo.gl/maps/V8ZPQxVphGx">ул. Большая Конюшенная, 19/8</a>
+              <a class="contacts__link" href="https://goo.gl/maps/V8ZPQxVphGx">ул. Большая Конюшенная, 19/8</a>
             </p>
           </li>
         </ul>
