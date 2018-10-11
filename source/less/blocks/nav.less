@@ -1,27 +1,120 @@
 .nav {
-  display: none;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.nav--closed .nav__toggle {
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  background-color: #ffffff;
+  width: 50px;
+  height: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.nav--closed .nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.nav--closed .nav__toggle {
+  &:hover,
+  &:focus,
+  &:hover::before,
+  &:focus::before,
+  &:hover::after,
+  &:focus::after {
+  background-color: rgba(210, 40, 86, 1);
+  }
+}
+
+.nav--closed .nav__toggle {
+  &:active,
+  &:active::before,
+  &:active::after {
+  background-color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.nav--opened .nav__toggle {
+  position: absolute;
+  top: -35px;
+  right: 20px;
+  width: 30px;
+  height: 4px;
+  border: none;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.nav--opened .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 4px;
+  border: none;
+  background-color: #ffffff;
+  transform: rotate(-90deg);
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-transform: uppercase;
+}
+
+.nav__link {
+  display: block;
+  padding: 22px 0;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
   color: #ffffff;
-}
-
-.nav__link {
+  text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-
-  &:hover {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  &:hover,
+  &:focus {
     color: rgba(210, 40, 86, 1);
   }
-
-  &:focus {
+  &:active {
     color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.nav__link--active {
+  &:hover,
+  &:focus,
+  &:active {
+  color: #ffffff;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .nav--closed .nav__item {
+    display: none;
   }
 }

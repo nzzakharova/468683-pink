@@ -7,55 +7,48 @@
   </head>
   <body class="page">
 
-    <div class="intro intro--photo">
-      <header class="header">
-        <div class="header__wrapper">
-          <a class="header__logo">
-            <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-          </a>
-          <nav class="nav">
-            <button class="button nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="nav__item nav__item--active">
-                <a class="nav__link">Фотографии</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="form.html">Конкурс</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <h1 class="intro__heading">Фотографии пользователей</h1>
-    </div>
+  <header class="header">
+    <a class="header__logo">
+      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+    </a>
+    <nav class="nav nav--closed">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link nav__link--active">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="photo.html">Фотографии</a></li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="main">
       <section class="photo">
-        <div class="photo__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Лента фотографий</h2>
           <p class="photo__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
           <figure class="photo__item">
             <img class="photo__users-image photo__users-image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя Анны">
-            <figcaption class="photo__caption">
-              <div class="photo__wrapper">
+            <div class="wrapper">
+              <figcaption class="photo__caption">
                 <cite class="photo__users-name">Анна</cite>
                 <time class="photo__date">(5 минут назад)</time>
                 <p class="photo__users-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <span class="photo__likes">Нравится: <output name="likes">215</output></span>
-              </div>
-            </figcaption>
+              </figcaption>
             </div>
           </figure>
-          <div class="photo__wrapper">
+          <div class="wrapper">
             <figure class="photo__item">
               <img class="photo__users-image" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя Левон">
               <figcaption class="photo__caption">
@@ -111,13 +104,13 @@
               </figcaption>
             </figure>
           </div>
-          <div class="photo__wrapper">
+          <div class="wrapper">
             <p class="photo__slogan">Затмите их всех! <br>
             Выкладывайте все, что накопилось в телефоне!</p>
           </div>
       </section>
       <section class="photo-add">
-        <div class="photo-add__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Добавление фотографии</h2>
           <img class="photo-add__image" src="img/photo-road-mobile@1x.jpg" alt="Добавляемая фотография">
           <div class="photo-add__filters filters">
@@ -144,7 +137,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__wrapper">
+      <div class="wrapper">
         <img class="footer__logo" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Пинк">
         <div class="footer__social social">
           <ul class="social__list">

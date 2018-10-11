@@ -7,38 +7,35 @@
   </head>
   <body class="page">
 
-  <div class="intro intro--index">
     <header class="header">
-      <div class="header__wrapper">
-        <a class="header__logo">
-          <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-        </a>
-        <nav class="nav">
-          <button class="button nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="nav__list">
-            <li class="nav__item nav__item--active">
-              <a class="nav__link">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <a class="header__logo">
+        <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <nav class="nav nav--closed">
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фотографии</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-  </div>
 
     <main class="main">
+      <div class="intro intro--index">
+      </div>
       <section class="download">
-        <div class="download__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Скачать Пинк</h2>
           <a href="#" class="button button--regular download__button">Скачать приложение</a>
           <ul class="download__list">
@@ -63,7 +60,7 @@
           <p class="features__slogan">Нам есть, что вам предложить!</p>
         </div>
 
-        <div class="features__wrapper">
+        <div class="wrapper">
           <ul class="features__list">
             <li class="features__item">
               <h3 class="features__title">Поднимает настроение</h3>
@@ -82,7 +79,7 @@
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list">
             <li class="reviews__item">
@@ -99,9 +96,15 @@
             </li>
           </ul>
           <div class="pagination reviews__pagination">
-              <button class="button pagination__button" type="button">1</button>
-              <button class="button pagination__button" type="button">2</button>
-              <button class="button pagination__button" type="button">3</button>
+              <button class="button pagination__button" type="button">
+                <span class="visually-hidden">1</span>
+              </button>
+              <button class="button pagination__button" type="button">
+                <span class="visually-hidden">2</span>
+              </button>
+              <button class="button pagination__button" type="button">
+                <span class="visually-hidden">3</span>
+              </button>
           </div>
         </div>
       </section>
@@ -159,10 +162,7 @@
           <li class="fare__item">
             <table class="fare__conditions">
               <tr class="fare__row fare__row--title">
-                <td class="fare__name" colspan="2">Анлим</td>
-              </tr>
-              <tr class="fare__row fare__row--title">
-                <td class="fare__price" colspan="2">9,99 USD</td>
+                <td class="fare__name" colspan="2">Анлим <span class="fare__price">9,99 USD</span></td>
               </tr>
               <tr>
                 <td class="fare__conditions-item">Розовый фильтр</td>
@@ -188,7 +188,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="wrapper">
           <b class="contacts__text">Остались вопросы? Свяжитесь с нами!</b>
           <ul class="contacts__list">
             <li class="contacts__item">
