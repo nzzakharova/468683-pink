@@ -1,0 +1,133 @@
+.table {
+  height: 280px;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  border-collapse: collapse;
+}
+
+.table__header {
+  color: #ffffff;
+  background-color: #283645;
+  border: none;
+  text-align: center;
+}
+
+.table__header-cell--empty {
+  border: none;
+  background: #f2f2f2;
+}
+
+.table__td {
+  width: 280px;
+  border: 2px solid #f2f2f2;
+  border-collapse: collapse;
+}
+
+.table__header-cell {
+  position: relative;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.table__header-cell--hit {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "хит";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
+}
+
+.table__header-cell--hit {
+
+}
+
+.table__header-price {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: lighter;
+}
+
+.table__title-cell {
+  padding: 21px 22px;
+
+}
+
+.table__cell {
+  position: relative;
+  padding: 21px 22px;
+}
+
+.table__cell::before {
+  position: absolute;
+  content: "";
+  right: 17px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 17px;
+}
+
+.table__cell--disabled::before {
+  content: "";
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 26px;
+}
+
+@media (max-width: 619px) {
+  .table__header-cell--empty,
+  .table__title-cell {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .table {
+    width: 1120px;
+    margin: 0 auto;
+  }
+
+  #radio2:checked ~ .table {
+    position: relative;
+    transform: translateX(-280px);
+  }
+
+  #radio1:checked ~ .table {
+    position: relative;
+    transform: translateX(0);
+  }
+
+  #radio3:checked ~ .table {
+    position: relative;
+    transform: translateX(-560px);
+  }
+
+}

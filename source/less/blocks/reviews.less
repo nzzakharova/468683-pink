@@ -1,7 +1,6 @@
-.reviews__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+.reviews {
+  position: relative;
+  padding-bottom: 94px;
 }
 
 .reviews__list {
@@ -9,11 +8,30 @@
   margin: 0;
   padding: 0;
   padding-top: 47px;
+  margin-bottom: 40px;
   text-align: center;
+}
+
+.reviews__item {
+  display: none;
+}
+
+.reviews__item--checked {
+  display: block;
 }
 
 .reviews__name {
   font-style: normal;
   font-weight: bold;
   color: #000000;
+}
+
+#review1:checked ~ .reviews__list:nth-child(1) {
+  display: block;
+}
+#review2:checked ~ .reviews__list:nth-child(2) {
+  display: block;
+}
+#review3:checked ~ .reviews__list:nth-child(3) {
+  display: block;
 }

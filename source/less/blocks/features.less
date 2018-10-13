@@ -4,8 +4,17 @@
 }
 
 .features__text {
+  position: relative;
   background-color: #ffffff;
-  padding-bottom: 64px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -32px;
+    right: 0;
+    background-image: url("../img/bg-triangle-white.svg");
+    width: 100%;
+    height: 94px;
+  }
 }
 
 .features__slogan {
@@ -17,24 +26,8 @@
   padding-bottom: 32px;
 }
 
-.features__list {
+.features__desc {
   position: relative;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-top: 53px;
-  padding-bottom: 284px;
-  text-align: center;
-  &::before {
-    content: "";
-    position: absolute;
-    top: -33px;
-    right: 0;
-    background-color: red;
-    width: 100%;
-    height: 33px;
-    transform: skew(90deg);
-  }
   &::after {
     content: " ";
     position: absolute;
@@ -45,6 +38,15 @@
     width: 157px;
     height: 277px;
   }
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 85px;
+  padding-bottom: 284px;
+  text-align: center;
 }
 
 .features__item {

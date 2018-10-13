@@ -1,0 +1,50 @@
+.pagination__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.pagination__controls {
+  position: absolute;
+  left: 50%;
+  width: 90px;
+  height: 14px;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;
+  border: 1px solid salmon;
+}
+
+.pagination__controls--price {
+  bottom: 68px;
+}
+
+.pagination__controls--price {
+  bottom: 47px;
+}
+
+.pagination__label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  background-color: #bec2c7;
+  vertical-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#radio1:checked ~ .pagination__controls label[for="radio1"],
+#radio2:checked ~ .pagination__controls label[for="radio2"],
+#radio3:checked ~ .pagination__controls label[for="radio3"] {
+  background: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}
+
+#review1:checked ~ .pagination__controls label[for="review1"],
+#review2:checked ~ .pagination__controls label[for="review2"],
+#review3:checked ~ .pagination__controls label[for="review3"] {
+  background: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}
