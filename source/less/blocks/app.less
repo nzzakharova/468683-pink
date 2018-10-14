@@ -25,3 +25,34 @@
   color: #283645;
   padding-bottom: 55px;
 }
+
+.app__label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 70px;
+}
+
+.app__label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.app__input:checked + .app__label::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+}

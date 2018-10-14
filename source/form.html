@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <title>Конкурс</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
 
   <header class="header">
-    <a class="header__logo">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
     </a>
-    <nav class="nav nav--closed">
+    <nav class="nav nav--opened">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link nav__link--active">Главная</a>
+          <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="photo.html">Фотографии</a></li>
+          <a class="nav__link" href="photo.html">Фотографии</a>
+        </li>
         <li class="nav__item">
-          <a class="nav__link" href="form.html">Конкурс</a>
+          <a class="nav__link nav__link--active">Конкурс</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
@@ -33,12 +35,16 @@
   </header>
 
     <main class="main">
-      <div class="intro intro--index">
-        <h1 class="intro__heading">Конкурс не самое безбашенное путешествие с Пинк</h1>
+      <div class="intro">
+        <div class="wrapper">
+          <h1 class="intro__heading">Конкурс не самое безбашенное путешествие с Пинк</h1>
+        </div>
       </div>
       <section class="form">
-        <div class="wrapper">
-          <h5 class="form__text">Поделитесь своей историей и получите шанс выиграть ценный груз - 1000 миль на вашу банковскую карту</h5>
+        <div class="form__text">
+          <div class="wrapper">
+            <h5 class="form__desc">Поделитесь своей историей и получите шанс выиграть ценный груз - 1000 миль на вашу банковскую карту</h5>
+          </div>
         </div>
         <form class="form__fill" method="post" action="https://echo.htmlacademy.ru">
           <div class="wrapper">
@@ -108,15 +114,15 @@
               <legend class="app__legend">С каким приложением путешествовали?</legend>
               <ul class="app__list">
                 <li class="app__item">
-                  <input class="app__input" type="radio" name="app" id="pink-for-ios" checked>
+                  <input class="visually-hidden app__input" type="radio" name="app" id="pink-for-ios" checked>
                   <label class="app__label" for="pink-for-ios">Pink для iOS</label>
                 </li>
                 <li class="app__item">
-                  <input class="app__input" type="radio" name="app" id="pink-for-android">
-                  <label class="app__label">Pink для Android</label>
+                  <input class="visually-hidden app__input" type="radio" name="app" id="pink-for-android">
+                  <label class="app__label" for="pink-for-android">Pink для Android</label>
                 </li>
                 <li class="app__item">
-                  <input class="app__input" type="radio" name="app" id="pink-for-windows">
+                  <input class="visually-hidden app__input" type="radio" name="app" id="pink-for-windows">
                   <label class="app__label" for="pink-for-windows">Windows Phone</label>
                 </li>
               </ul>

@@ -31,19 +31,26 @@
   padding-left: 70px;
   cursor: pointer;
   user-select: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: 0;
-
-    width: 35px;
-    height: 35px;
-    background-color: #ffffff;
-    border: 2px solid #e5e5e5;
-  }
 }
 
-//???.checkbox__input:checked + .checkbox__label::before {
-//???background-image: url("../img/icon-yes.svg");
+.checkbox__label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.checkbox__input:checked + .checkbox__label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+}

@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <title>Фотографии</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
 
   <header class="header">
-    <a class="header__logo">
+    <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
     </a>
-    <nav class="nav nav--closed">
+    <nav class="nav nav--opened">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link nav__link--active">Главная</a>
+          <a class="nav__link" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="photo.html">Фотографии</a></li>
+          <a class="nav__link nav__link--active">Фотографии</a>
+        </li>
         <li class="nav__item">
           <a class="nav__link" href="form.html">Конкурс</a>
         </li>
@@ -34,11 +36,15 @@
 
     <main class="main">
       <div class="intro">
+        <div class="wrapper">
+          <h1 class="intro__heading">Фотографии пользователей</h1>
+        </div>
       </div>
       <section class="photo">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Лента фотографий</h2>
-          <p class="photo__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="photo__text">
+          <div class="wrapper">
+            <h5 class="photo__desc">Взгляните на фотографии, которые выкладывают пользователи!<br>Видите, как не хватает ваших?</h5>
+          </div>
         </div>
           <figure class="photo__item">
             <img class="photo__users-image photo__users-image--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография пользователя Анны">
@@ -128,13 +134,14 @@
                 <img class="filters__image" src="img/icon-editor-contrast.svg" width="32" height="32" alt="Контраст">
               </li>
             </ul>
-            <input class="filters__range" type="range" name="range">
-            <label class="visually-hidden"></label>
+            <div class="filters__range">
+              <div class="filters__toggle"></div>
+            </div>
           </div>
-        </div>
-        <div class="photo-add__button">
-          <button class="button button--regular button--pink" type="button">Запостить</button>
-          <button class="button button--regular button--disabled" type="button">Отмена</button>
+          <div class="photo-add__button">
+            <button class="button button--regular button--pink" type="button">Запостить</button>
+            <button class="button button--regular button--disabled" type="button">Отмена</button>
+          </div>
         </div>
       </section>
     </main>

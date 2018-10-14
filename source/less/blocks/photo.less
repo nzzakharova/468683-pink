@@ -3,17 +3,15 @@
   margin-bottom: 20px;
 }
 
-.photo__wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding: 0 20px;
+.photo__text {
+  padding: 55px 0;
+  text-align: center;
 }
 
 .photo__desc {
-  margin-bottom: 50px;
   font-size: 14px;
-  line-height: 30px;
-  text-align: center;
+  font-weight: normal;
+  margin: 0;
 }
 
 .photo__item {
@@ -26,14 +24,13 @@
 }
 
 .photo__users-image--panorama {
+  position: relative;
   width: 100%;
 }
 
 .photo__caption {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding: 24px 18px;
   background-color: #f2f2f2;
-
 }
 
 .photo__users-name {
@@ -46,15 +43,30 @@
   text-transform: uppercase;
 }
 
+.photo__users-text {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .photo__likes {
+  position: relative;
+  padding-left: 32px;
   color: #d22856;
   text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    background-image: url("../img/icon-heart.svg");
+    width: 12.5px;
+    height: 12px;
+  }
 }
 
 .photo__slogan {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  line-height: 30px;
   text-align: center;
 }

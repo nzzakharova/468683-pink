@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Приложение: Пинк</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
@@ -21,7 +22,8 @@
             <a class="nav__link nav__link--active">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="photo.html">Фотографии</a></li>
+            <a class="nav__link" href="photo.html">Фотографии</a>
+          </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">Конкурс</a>
           </li>
@@ -115,8 +117,40 @@
 
       <section class="price">
         <h2 class="visually-hidden">Наши тарифы</h2>
-        <div class="wrapper wrapper--price">
-          <div class="button pagination__button">
+        <div class="wrapper--price">
+          <table class="price__table table">
+            <thead class="table__header">
+              <tr class="table__row">
+                <td class="table__header-cell table__header-cell--empty"></td>
+                <td class="table__header-cell">База<span class="table__header-price">1,99 USD</span></td>
+                <td class="table__header-cell table__header-cell--hit">Стандарт<span class="table__header-price">3,99 USD</span></td>
+                <td class="table__header-cell">Анлим<span class="table__header-price">9,99 USD</span></td>
+              </tr>
+            </thead>
+            <tbody class="table__body">
+              <tr class="table__row">
+                <td class="table__title-cell">Розовый фильтр</td>
+                <td class="table__cell">Розовый фильтр</td>
+                <td class="table__cell">Розовый фильтр</td>
+                <td class="table__cell">Розовый фильтр</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__title-cell">Смайлики</td>
+                <td class="table__cell table__cell--disabled">Смайлики</td>
+                <td class="table__cell">Смайлики</td>
+                <td class="table__cell">Смайлики</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table__title-cell">Комментарии</td>
+                <td class="table__cell table__cell--disabled">Комментарии</td>
+                <td class="table__cell table__cell--disabled">Комментарии</td>
+                <td class="table__cell">Комментарии</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="wrapper">
+          <div class="button price__pagination pagination__button ">
             <input class="pagination__input" type="radio" name="radio" id="radio1">
             <input class="pagination__input" type="radio" name="radio" id="radio2" checked>
             <input class="pagination__input" type="radio" name="radio" id="radio3">
@@ -126,36 +160,6 @@
               <label class="pagination__label" for="radio3"></label>
             </div>
           </div>
-          <table class="price__table table">
-            <thead class="table__header">
-              <tr class="table__row">
-                <td class="table__td table__header-cell table__header-cell--empty"></td>
-                <td class="table__td table__header-cell">База<span class="table__header-price">1,99 USD</span></td>
-                <td class="table__td table__header-cell table__header-cell--hit">Стандарт<span class="table__header-price">3,99 USD</span></td>
-                <td class="table__td table__header-cell">Анлим<span class="table__header-price">9,99 USD</span></td>
-              </tr>
-            </thead>
-            <tbody class="table__body">
-              <tr class="table__row">
-                <td class="table__td table__title-cell">Розовый фильтр</td>
-                <td class="table__td table__cell">Розовый фильтр</td>
-                <td class="table__td table__cell">Розовый фильтр</td>
-                <td class="table__td table__cell">Розовый фильтр</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__td table__title-cell">Смайлики</td>
-                <td class="table__td table__cell table__cell--disabled">Смайлики</td>
-                <td class="table__td table__cell">Смайлики</td>
-                <td class="table__td table__cell">Смайлики</td>
-              </tr>
-              <tr class="table__row">
-                <td class="table__td table__title-cell">Комментарии</td>
-                <td class="table__td table__cell table__cell--disabled">Комментарии</td>
-                <td class="table__td table__cell table__cell--disabled">Комментарии</td>
-                <td class="table__td table__cell">Комментарии</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </section>
 
