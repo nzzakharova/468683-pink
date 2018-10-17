@@ -1,7 +1,27 @@
 .copyright__link {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  width: 140px;
+  height: 34px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-decoration: none;
+}
+
+.copyright__text {
   color: #283645;
   font-weight: normal;
-  text-decoration: none;
-  text-align: center;
+  align-self: center;
+}
+
+.copyright__icon {
+  flex-shrink: 0;
+}
+
+.copyright__icon:hover path {
+  fill: #283645;
+}
+
+.copyright__icon:active path {
+  opacity: 0.3;
 }

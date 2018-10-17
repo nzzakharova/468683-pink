@@ -7,6 +7,7 @@
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   z-index: -1;
 }
 
@@ -33,4 +34,19 @@
   padding: 0;
   margin: 0;
   padding-top: 100px;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 720px;
+  }
+
+  .intro--index::after {
+    transform: translateX(-50%);
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    width: 700px;
+    height: 545px;
+  }
 }

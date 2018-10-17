@@ -4,6 +4,7 @@
   color: #000000;
   text-transform: uppercase;
   border-collapse: collapse;
+  margin-bottom: 40px;
 }
 
 .table__header {
@@ -19,9 +20,14 @@
 }
 
 .table__row td {
+  position: relative;
   width: 280px;
   border: 2px solid #f2f2f2;
   border-collapse: collapse;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .table__header-cell {
@@ -60,10 +66,6 @@
   }
 }
 
-.table__header-cell--hit {
-
-}
-
 .table__header-price {
   display: block;
   font-size: 24px;
@@ -71,36 +73,29 @@
   font-weight: lighter;
 }
 
-.table__title-cell {
-  padding: 21px 22px;
-
-}
-
-.table__cell {
-  position: relative;
-  padding: 21px 22px;
-}
-
 .table__cell::before {
   position: absolute;
   content: "";
   right: 17px;
-  background-image: url("../img/icon-yes.svg");
+  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='31' height='21' viewBox='-82.357 4.875 21.698 16.09'%3E%3Cpath fill='%233dc644' d='M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  width: 22px;
-  height: 17px;
+  width: 31px;
+  height: 21px;
 }
 
 .table__cell--disabled::before {
   content: "";
-  background-image: url("../img/icon-no.svg");
+  background-image: url("data:image/svg+xml,%3Csvg version='1' xmlns='http://www.w3.org/2000/svg' width='26.752' height='26.752'%3E%3Cpath fill='%23f25b26' d='M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   width: 27px;
   height: 26px;
 }
 
-@media (max-width: 619px) {
-  .table__header-cell--empty,
+@media (min-width: @mobile-width-only) {
+  .table__header-cell--empty {
+    display: none;
+  }
+
   .table__title-cell {
     display: none;
   }
@@ -129,5 +124,4 @@
     position: relative;
     transform: translateX(-560px);
   }
-
 }

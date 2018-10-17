@@ -10,6 +10,7 @@
 
 .photo__desc {
   font-size: 14px;
+  line-height: 30px;
   font-weight: normal;
   margin: 0;
 }
@@ -24,12 +25,35 @@
 }
 
 .photo__users-image--panorama {
-  position: relative;
   width: 100%;
 }
 
+.photo__item--panorama {
+  position: relative;
+  &::before {
+    display: block;
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 35px;
+    background-color: #d22856;
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 0;
+    z-index: 2;
+    box-sizing: border-box;
+  }
+}
+
 .photo__caption {
-  padding: 24px 18px;
+  padding: 18px;
   background-color: #f2f2f2;
 }
 
@@ -39,6 +63,7 @@
 }
 
 .photo__date {
+  font-size: 12px;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -51,12 +76,13 @@
 .photo__likes {
   position: relative;
   padding-left: 32px;
+  font-size: 12px;
   color: #d22856;
   text-transform: uppercase;
   &::before {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 2px;
     left: 0;
     background-image: url("../img/icon-heart.svg");
     width: 12.5px;
@@ -66,7 +92,8 @@
 
 .photo__slogan {
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
   text-align: center;
 }

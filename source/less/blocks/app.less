@@ -1,11 +1,11 @@
 .app {
   background-color: #f2f2f2;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .app__legend {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 41px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -20,15 +20,18 @@
 }
 
 .app__item {
-  font-size: 18px;
-  line-height: 30px;
-  color: #283645;
   padding-bottom: 55px;
+  &:last-child {
+    padding-bottom: 51px;
+  }
 }
 
 .app__label {
   position: relative;
   display: block;
+  font-size: 18px;
+  line-height: 21px;
+  color: #283645;
   cursor: pointer;
   user-select: none;
   padding-left: 70px;
@@ -44,6 +47,18 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+  &:hover {
+  border: 2px solid #283645;
+  }
+}
+
+.app__label:hover::before,
+.app__label:focus::before {
+  border-color: #283645;
+}
+
+.app__label:active::before {
+  border-color: #d22856;
 }
 
 .app__input:checked + .app__label::after {
@@ -56,3 +71,4 @@
   background-color: #d22856;
   border-radius: 50%;
 }
+

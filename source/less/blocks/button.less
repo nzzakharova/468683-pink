@@ -5,11 +5,15 @@
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .button--regular {
   display: block;
-  width: 280px;
+  width: 274px;
   padding: 15px 0;
   font-size: 18px;
   font-weight: bold;
@@ -26,18 +30,43 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .button--regular {
+    width: 294px;
+  }
+}
+
 .button--pink {
   margin-top: 38px;
   margin-bottom: 12px;
   color: #d22856;
   border-color: #d22856;
-  background-color: #f2f2f2;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--disabled {
-  color: #dddfe0;
-  border-color: #dddfe0;
-  background-color: #f2f2f2;
+  color: rgba(40, 54, 69, 0.1);
+  border-color: rgba(40, 54, 69, 0.1);
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+    background-color: transparent;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    border: rgba(40, 54, 69, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .button--submit {
@@ -52,5 +81,15 @@
   border: none;
   border-radius: 2px;
   background-color: #2aab6d;
-  margin-bottom: 43px;
+  margin-bottom: 37px;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }

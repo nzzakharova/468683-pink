@@ -1,6 +1,6 @@
 .nav {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -81,6 +81,17 @@
   background-color: #ffffff;
   transform: rotate(-90deg);
 }
+
+@media (min-width: @tablet-width) {
+  .nav--closed .nav__toggle {
+    top: -56px;
+  }
+
+  .nav--opened .nav__toggle {
+    top: -56px;
+  }
+}
+
 
 .nav__list {
   margin: 0;

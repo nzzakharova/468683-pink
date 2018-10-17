@@ -1,17 +1,9 @@
-.pagination__input {
-  position: absolute;
-  opacity: 0;
-}
-
-.pagination__controls {
-  width: 90px;
-  height: 14px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13px;
   margin: 0 auto;
-  border: 1px solid deepskyblue;
-}
-
-.pagination__controls--price {
-  bottom: 47px;
 }
 
 .pagination__label {
@@ -25,17 +17,23 @@
   cursor: pointer;
 }
 
-#radio1:checked ~ .pagination__controls label[for="radio1"],
-#radio2:checked ~ .pagination__controls label[for="radio2"],
-#radio3:checked ~ .pagination__controls label[for="radio3"] {
-  background: #ffffff;
-  border: 3px solid #283645;
-  border-radius: 50%;
-}
+//#review1:checked ~ .pagination label[for="review1"],
+//#review2:checked ~ .pagination label[for="review2"],
+//#review3:checked ~ .pagination label[for="review3"] {
+//  background: #ffffff;
+//  border: 3px solid #283645;
+//  border-radius: 50%;
+//}
+//
+//#radio1:checked ~ .pagination label[for="radio1"],
+//#radio2:checked ~ .pagination label[for="radio2"],
+//#radio3:checked ~ .pagination label[for="radio3"] {
+//  background: #ffffff;
+//  border: 3px solid #283645;
+//  border-radius: 50%;
+//}
 
-#review1:checked ~ .pagination__controls label[for="review1"],
-#review2:checked ~ .pagination__controls label[for="review2"],
-#review3:checked ~ .pagination__controls label[for="review3"] {
+.pagination__radio:checked ~ .pagination .pagination__label {
   background: #ffffff;
   border: 3px solid #283645;
   border-radius: 50%;
