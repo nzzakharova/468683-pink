@@ -5,7 +5,6 @@
   text-transform: uppercase;
   border-collapse: collapse;
   margin-bottom: 40px;
-
 }
 
 .table__header {
@@ -16,6 +15,7 @@
 }
 
 .table__header-cell--empty {
+  display: none;
   border: none;
   background: #f2f2f2;
 }
@@ -92,25 +92,21 @@
   height: 26px;
 }
 
-.table__header-cell--empty {
-  display: none;
-}
-
 .table__title-cell {
   display: none;
 }
 
-#radio1:checked ~ .table {
+.pagination__radio-1:checked ~ .table {
   position: relative;
   transform: translateX(0);
 }
 
-#radio2:checked ~ .table {
+.pagination__radio-2:checked ~ .table {
   position: relative;
   transform: translateX(-280px);
 }
 
-#radio3:checked ~ .table {
+.pagination__radio-3:checked ~ .table {
   position: relative;
   transform: translateX(-560px);
 }

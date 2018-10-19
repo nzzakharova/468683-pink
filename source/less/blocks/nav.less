@@ -13,44 +13,40 @@
   height: 4px;
   cursor: pointer;
   border: none;
-}
 
-.nav--closed .nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-}
+  &:active,
+  &:active::before,
+  &:active::after {
+    background-color: rgba(210, 40, 86, 0.3);
+  }
 
-.nav--closed .nav__toggle::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-}
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+  }
 
-.nav--closed .nav__toggle {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+  }
+
   &:hover,
   &:focus,
   &:hover::before,
   &:focus::before,
   &:hover::after,
   &:focus::after {
-  background-color: rgba(210, 40, 86, 1);
-  }
-}
-
-.nav--closed .nav__toggle {
-  &:active,
-  &:active::before,
-  &:active::after {
-  background-color: rgba(210, 40, 86, 0.3);
+    background-color: rgba(210, 40, 86, 1);
   }
 }
 
@@ -92,7 +88,6 @@
   }
 }
 
-
 .nav__list {
   margin: 0;
   padding: 0;
@@ -111,10 +106,12 @@
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+
   &:hover,
   &:focus {
     color: rgba(210, 40, 86, 1);
   }
+
   &:active {
     color: rgba(210, 40, 86, 0.3);
   }
