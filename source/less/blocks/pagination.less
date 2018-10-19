@@ -17,23 +17,17 @@
   cursor: pointer;
 }
 
-//#review1:checked ~ .pagination label[for="review1"],
-//#review2:checked ~ .pagination label[for="review2"],
-//#review3:checked ~ .pagination label[for="review3"] {
-//  background: #ffffff;
-//  border: 3px solid #283645;
-//  border-radius: 50%;
-//}
-//
-//#radio1:checked ~ .pagination label[for="radio1"],
-//#radio2:checked ~ .pagination label[for="radio2"],
-//#radio3:checked ~ .pagination label[for="radio3"] {
-//  background: #ffffff;
-//  border: 3px solid #283645;
-//  border-radius: 50%;
-//}
+#review1:checked ~ .pagination label[for="review1"],
+#review2:checked ~ .pagination label[for="review2"],
+#review3:checked ~ .pagination label[for="review3"] {
+  background: #ffffff;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}
 
-.pagination__radio:checked ~ .pagination .pagination__label {
+#radio1:checked ~ .pagination--table label[for="radio1"],
+#radio2:checked ~ .pagination--table label[for="radio2"],
+#radio3:checked ~ .pagination--table label[for="radio3"]{
   background: #ffffff;
   border: 3px solid #283645;
   border-radius: 50%;
