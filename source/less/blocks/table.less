@@ -110,3 +110,32 @@
   position: relative;
   transform: translateX(-560px);
 }
+
+@media (min-width: @tablet-width) {
+  .table {
+    width: 620px;
+  }
+
+  .table__row td {
+    width: 152px;
+  }
+
+  .table__header-cell--empty,
+  .table__title-cell {
+    display: block;
+  }
+
+  .table__cell {
+    display: none;
+  }
+
+  .table__header-cell {
+    font-size: 16px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+  }
+
+  .table__header-price {
+    font-size: 18px;
+  }
+}

@@ -29,6 +29,11 @@
   color: #000000;
 }
 
+.reviews__desc {
+  display: none;
+  margin: 0;
+}
+
 .reviews__text {
   line-height: 30px;
 }
@@ -43,4 +48,32 @@
 
 .pagination__review-1:checked ~ .reviews__list:nth-child(3) {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__list {
+    padding-top: 0;
+  }
+
+  .reviews__item--checked {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__desc {
+    display: block;
+    order: 2;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .reviews__name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    order: 1;
+  }
 }

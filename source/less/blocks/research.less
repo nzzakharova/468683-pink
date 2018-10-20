@@ -5,9 +5,28 @@
 @media (min-width: @tablet-width) {
   .research {
     display: block;
-    margin-top: 100px;
+    margin-top: 98px;
+    margin-bottom: 125px;
+  }
+
+  .research__text {
+    position: relative;
     width: 270px;
     margin-left: 310px;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      color: #d22856;
+      font-size: 96px;
+      top: 0;
+      left: -310px;
+      width: 188px;
+      height: 188px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 14px solid #d22856;
+    }
   }
 
   .research__header {
@@ -18,5 +37,12 @@
   .research__more-info {
     color: #d22856;
     text-decoration: underline;
+  }
+
+  .research__timer svg {
+    position: relative;
+    margin-top: -250px;
+    width: 238px;
+    height: 276px;
   }
 }
