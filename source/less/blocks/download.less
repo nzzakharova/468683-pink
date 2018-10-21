@@ -43,7 +43,7 @@
     background-color: transparent;
   }
 
-  .download .wrapper {
+  .download__block {
     width: 300px;
   }
 
@@ -58,15 +58,35 @@
     text-align: center;
   }
 
-  .download__list {
-    width: ;
-  }
-
   .download__button {
     margin-bottom: 40px;
   }
 
+  .download__list {
+    margin-bottom: 36px;
+  }
+
   .download__info {
     font-size: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    top: 196px;
+  }
+
+  .download__desc {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 52px;
+  }
+
+  .download__button {
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 55px;
   }
 }
