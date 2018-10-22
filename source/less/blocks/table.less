@@ -117,9 +117,15 @@
     width: 620px;
   }
 
+  .pagination__radio-1:checked ~ .table,
+  .pagination__radio-2:checked ~ .table,
+  .pagination__radio-3:checked ~ .table {
+    transform: translateX(0);
+  }
+
   .table__header-cell--empty,
   .table__title-cell {
-    display: block;
+    display: table-cell;
   }
 
   .table__row td {
