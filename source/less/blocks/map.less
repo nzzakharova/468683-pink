@@ -44,3 +44,19 @@
     height: 500px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .map {
+    background-image: url("../img/bg-map-desktop@1x.png)");
+    height: 700px;
+    margin-top: 0;
+
+    &::before {
+      top: -21px;
+    }
+  }
+
+  .map__iframe {
+    height: 700px;
+  }
+}
