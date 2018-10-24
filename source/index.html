@@ -10,15 +10,15 @@
 <body class="page">
 
 <header class="header header--solid">
-  <div class="wrapper">
-    <a class="header__logo">
-      <img class="header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
-    </a>
-  </div>
-  <nav class="nav">
-    <button class="nav__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+  <nav class="nav nav--opened">
+    <div class="nav__header">
+      <a class="nav__logo">
+        <img class="nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Пинк">
+      </a>
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <ul class="nav__list">
       <li class="nav__item">
         <a class="nav__link nav__link--active">Главная</a>
@@ -37,34 +37,36 @@
 </header>
 
 <main class="main">
-  <div class="intro intro--index">
-  </div>
-  <section class="download">
-    <div class="wrapper">
-      <div class="download__block">
-        <h2 class="download__desc">Взгляните на жизнь иначе!</h2>
-        <a href="#" class="button button--regular download__button">Скачать приложение</a>
-        <ul class="download__list">
-          <li class="download__item">
-            <a href="#" class="download__link">
-              <img class="download__image download__image--ios" src="img/logo-apple.svg" width="47" height="56" alt="Логотип apple">
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link">
-              <img class="download__image download__image--android" src="img/logo-android.svg" width="43" height="47" alt="Логотип android">
-            </a>
-          </li>
-          <li class="download__item">
-            <a href="#" class="download__link">
-              <img class="download__image download__image--microsoft" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип microsoft">
-            </a>
-          </li>
-        </ul>
-        <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+   <div class="container">
+    <div class="intro intro--index">
     </div>
-  </section>
+    <section class="download">
+      <div class="wrapper">
+        <div class="download__block">
+          <h2 class="download__desc">Взгляните на жизнь иначе!</h2>
+          <a href="#" class="button button--regular download__button">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a href="#" class="download__link">
+                <img class="download__image download__image--ios" src="img/logo-apple.svg" width="47" height="56" alt="Логотип apple">
+              </a>
+            </li>
+            <li class="download__item">
+              <a href="#" class="download__link">
+                <img class="download__image download__image--android" src="img/logo-android.svg" width="43" height="47" alt="Логотип android">
+              </a>
+            </li>
+            <li class="download__item">
+              <a href="#" class="download__link">
+                <img class="download__image download__image--microsoft" src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </section>
+   </div>
 
   <section class="features">
     <div class="features__text">
